@@ -55,6 +55,12 @@ class HmDianPingApplicationTests {
         cacheClient.setWithLogicalExpire(CACHE_SHOP_KEY + 1L, shop, 10L, TimeUnit.SECONDS);
     }
 
+    @Test
+    void getValue() {
+        stringRedisTemplate.opsForValue().set("x2", "y2");
+        System.out.println(stringRedisTemplate.opsForValue().get("x2"));
+    }
+
 
 
 
