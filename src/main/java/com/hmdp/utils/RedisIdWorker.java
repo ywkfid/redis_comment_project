@@ -10,7 +10,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.ZoneOffset;
 
 /**
- *
+ * 全局id自动生成
  */
 @Component
 public class RedisIdWorker {
